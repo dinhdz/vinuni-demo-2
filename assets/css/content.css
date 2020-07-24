@@ -1,0 +1,24 @@
+.uw-lib-front-layout .wrapper-content {
+    width: 100%;
+    margin: 0 auto;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #f8f8f8;
+}
+.panel-pane.pane-block.pane-uw-lib-homepage-uw-lib-special-alert {
+    background-color: #cd3c3f !important;
+    border: none !important;
+    text-align: center !important;
+    color: #fff !important;
+    border-radius: 4px;
+    padding-left: 15px;
+}
+.divider_right {
+    background-color: #eee;
+    height: 10px;
+    width: 106%;
+    margin-left: -10px;
+    margin-bottom: 20px;
+}

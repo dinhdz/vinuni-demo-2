@@ -1,0 +1,259 @@
+.ctools-locked {
+    color: red;
+    border: 1px solid red;
+    padding: 1em;
+}
+.ctools-owns-lock {
+    background: #ffffdd none repeat scroll 0 0;
+    border: 1px solid #f0c020;
+    padding: 1em;
+}
+a.ctools-ajaxing,
+input.ctools-ajaxing,
+button.ctools-ajaxing,
+select.ctools-ajaxing {
+    padding-right: 18px !important;
+    background: url(/web/sites/all/modules/ctools/images/status-active.gif) right center no-repeat;
+}
+div.ctools-ajaxing {
+    float: left;
+    width: 18px;
+    background: url(/web/sites/all/modules/ctools/images/status-active.gif) center center no-repeat;
+}
+div.panel-pane div.admin-links {
+    font-size: xx-small;
+    margin-right: 1em;
+}
+div.panel-pane div.admin-links li a {
+    color: #ccc;
+}
+div.panel-pane div.admin-links li {
+    padding-bottom: 2px;
+    background: white;
+    z-index: 201;
+}
+div.panel-pane div.admin-links:hover a,
+div.panel-pane div.admin-links-hover a {
+    color: #000;
+}
+div.panel-pane div.admin-links a:before {
+    content: "[";
+}
+div.panel-pane div.admin-links a:after {
+    content: "]";
+}
+div.panel-pane div.panel-hide {
+    display: none;
+}
+div.panel-pane div.panel-hide-hover,
+div.panel-pane:hover div.panel-hide {
+    display: block;
+    position: absolute;
+    z-index: 200;
+    margin-top: -1.5em;
+}
+div.panel-pane div.feed a {
+    float: right;
+}
+* {
+    box-sizing: border-box;
+}
+/* .uw-lib-front-layout .wrapper-content {
+    width: 100%;
+    margin: 0 auto;
+    font: 1em Helvetica, arial, sans-serif;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    padding-left: 9px;
+    padding-right: 9px;
+    background-color: #fff;
+} */
+.uw-lib-front-layout .wrapper-content > * {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+.uw-lib-front-layout nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.uw-lib-front-layout .wrapper-content {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(12, [col-start] 1fr);
+    grid-gap: 10px;
+    padding-bottom: 10px;
+}
+.uw-lib-front-layout .wrapper-content > * {
+    -ms-grid-column-span: 12;
+    grid-column: col-start / span 12;
+}
+@media (min-width: 700px) {
+    .uw-lib-front-layout .wrapper-content .content_top {
+        -ms-grid-column-span: 8;
+        grid-column: col-start / span 8;
+        -ms-grid-row: 2;
+        grid-row: 2;
+    }
+    .uw-lib-front-layout .wrapper-content .side {
+        -ms-grid-column: 9;
+        -ms-grid-column-span: 4;
+        grid-column: col-start 9 / span 4;
+        -ms-grid-row: 2;
+        -ms-grid-row-span: 3;
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+    .uw-lib-front-layout .wrapper-content .content_middle {
+        -ms-grid-column-span: 8;
+        grid-column: col-start / span 8;
+        -ms-grid-row: 3;
+        grid-row: 3;
+    }
+    .uw-lib-front-layout .wrapper-content .content_left {
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 4;
+        grid-column: col-start / span 4;
+        -ms-grid-row: 4;
+        grid-row: 4;
+    }
+    .uw-lib-front-layout .wrapper-content .content_center {
+        -ms-grid-column: 5;
+        -ms-grid-column-span: 4;
+        grid-column: col-start 5 / span 4;
+        -ms-grid-row: 4;
+        grid-row: 4;
+    }
+    .uw-lib-front-layout .wrapper-content .content_right {
+        -ms-grid-column: 5;
+        -ms-grid-column-span: 4;
+        grid-column: col-start 9 / span 4;
+        -ms-grid-row: 4;
+        grid-row: 4;
+    }
+    .uw-lib-front-layout .wrapper-content .main-footer {
+        -ms-grid-column-span: 12;
+        grid-column: col-start / span 12;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+}
+.quicktabs-hide {
+    display: none;
+}
+ul.quicktabs-tabs {
+    margin-top: 0;
+}
+ul.quicktabs-tabs li {
+    display: inline;
+    background: none;
+    list-style-type: none;
+    padding: 2px;
+    white-space: nowrap;
+}
+.responsive-menus.responsified {
+    clear: both;
+    width: 100%;
+}
+.responsive-menus.responsified span.toggler {
+    padding: 1px;
+    display: block;
+    background: #333;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #000;
+    font-size: 1.35em;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+}
+.responsive-menus.responsified.responsive-toggled span.toggler {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom: 1px solid #bbb;
+}
+.responsive-menus.responsified .responsive-menus-simple {
+    display: none;
+    width: 100%;
+    background: #333;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    box-shadow: 2px 2px 2px #000;
+}
+.responsive-menus.responsified.responsive-toggled .responsive-menus-simple,
+.responsive-menus.responsified.responsive-toggled .responsive-menus-simple ul {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+.responsive-menus.responsified.responsive-toggled.absolute {
+    position: relative;
+    z-index: 999;
+}
+.responsive-menus.responsified.responsive-toggled.absolute .responsive-menus-simple {
+    position: absolute;
+    z-index: 999;
+    top: auto;
+}
+.responsive-menus.responsified .responsive-menus-simple li {
+    width: 100%;
+    display: block;
+    padding: 0;
+    margin: 0;
+    clear: both;
+    list-style: none;
+}
+.responsive-menus.responsified .responsive-menus-simple li a {
+    color: #fff;
+    display: block;
+    padding: 1em 5%;
+    margin: 0;
+    text-align: left;
+    color: #fff;
+    border-bottom: 1px solid #bbb;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.responsive-menus.responsified .responsive-menus-simple > li.last a {
+    border-bottom: none;
+}
+.responsive-menus.responsified .responsive-menus-simple li ul li a {
+    padding: 1em 0 1em 10%;
+}
+.responsive-menus.responsified .responsive-menus-simple li ul li ul li a {
+    padding: 1em 0 1em 15%;
+}
+.responsive-menus.responsified .responsive-menus-simple li ul {
+    display: block !important;
+    visibility: visible !important;
+    margin: 0;
+    padding: 0;
+}
+.responsive-menus span.toggler {
+    display: none;
+}
+.panel-1col {
+}
+.panel-2col .panel-col-first .inside {
+    margin: 0;
+}
+.panel-1col .panel-col {
+    width: 100%;
+}
+#panels-edit-display .panel-pane,
+#panels-edit-display .helperclass {
+    margin: 0.5em;
+}
+.panel-2col .panel-separator {
+    margin: 0 0 1em 0;
+}
+div.qtip {
+    z-index: 6000;
+}
+div.menu-minipanels {
+    display: none;
+}

@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="icon" href="/favicon.ico" sizes="192x192">
+    <title>Library Portal | VinUniversity </title>
+    <link type="text/css" rel="stylesheet" href="./assets/css/vinuni/main.css" media="all" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/vinuni/style.css" media="all" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/vinuni/megafish.css" media="all" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/custom-vinuni.css" media="all" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/vinuni/library-local.css" media="all" />
+    
+    <link type="text/css" rel="stylesheet" href="./assets/css/content.css" media="all" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/content2.css" media="all" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/font-awesome-4.7.0/css/font-awesome.min.css"
+        media="all" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <style type="text/css">
+        /* LibChat Widget CSS */
+        .lcs_slide_out {
+            width: 400px;
+            height: 340px;
+            position: fixed;
+            -webkit-transition-duration: 0.6s;
+            -moz-transition-duration: 0.6s;
+            -o-transition-duration: 0.6s;
+            transition-duration: 0.6s;
+            background-color: rgb(249, 249, 249);
+            border: 1px solid #ccc;
+            z-index: 1000;
+        }
+
+        .lcs_slide_out header {
+            display: block;
+        }
+
+        .lcs_slide_out header a {
+            text-align: center;
+            padding: 10px;
+            display: block;
+            position: absolute;
+            border-width: 0;
+            border-style: solid;
+            background-color: #ffd54f;
+        }
+
+        .lcs_load {
+            width: 400px;
+            height: 100%;
+            padding: 0 2px 0 0;
+            box-sizing: border-box;
+        }
+
+        .lcs_slide_out-l {
+            top: 100px;
+            left: -400px;
+        }
+
+        .lcs_slide_out-l.open {
+            left: 0px;
+        }
+
+        .lcs_slide_out-l header {
+            -webkit-transform: rotate(-90deg);
+            -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+            -webkit-transform-origin: top right;
+            -ms-transform-origin: top right;
+            transform-origin: top right;
+        }
+
+        .lcs_slide_out-l header a {
+            right: 10px;
+        }
+
+        .lcs_slide_out-r {
+            top: 100px;
+            right: -400px;
+        }
+
+        .lcs_slide_out-r.open {
+            right: 0px;
+        }
+
+        .lcs_slide_out-r header {
+            -webkit-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+            -webkit-transform-origin: top left;
+            -ms-transform-origin: top left;
+            transform-origin: top left;
+        }
+
+        .lcs_slide_out-r header a {
+            left: 10px;
+        }
+
+        .lcs_slide_out-b {
+            right: 100px;
+            bottom: -2px;
+            height: 0;
+        }
+
+        .lcs_slide_out-b.open {
+            height: 340px;
+        }
+
+        .lcs_slide_out-b header a {
+            left: 10px;
+            bottom: 0px;
+            border-width: 1px 1px 0px 1px;
+        }
+
+        .lcs_slide_out-b.open header a {
+            top: -42px;
+            bottom: auto;
+        }
+
+        .lcs_slide_out iframe {
+            width: 100%;
+            height: 338px;
+            background-color: #f9f9f9;
+            border: 0px;
+            box-sizing: border-box;
+        }
+
+        @media (max-width: 768px) {
+            .lcs_slide_out {
+                width: 80%;
+            }
+
+            .lcs_load {
+                width: 100%;
+            }
+
+            .lcs_slide_out-l {
+                left: -80%;
+            }
+
+            .lcs_slide_out-r {
+                right: -80%;
+            }
+
+            .lcs_slide_out-b {
+                left: 0;
+            }
+        }
+    </style>
+    <style>
+        .header-wrap .header {
+            position: unset;
+        }
+    </style>
+</head>
+
+<body id="home"
+    class="home page-template page-template-page-home page-template-page-home-php page page-id-10 home-page bs-chrome os-windows">
+
+    <div class="wrapper" id="wrapper">
+        <!-- Header -->
+        <div class="header-wrap">
+            <div id="headertopbar">
+                <div class="container">
+                    <div class="headertopbar-left">
+                        <ul id="menu-top-menu" class="menu">
+                            <li id="menu-item-826"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-826"><a
+                                    href="https://vinuni.edu.vn/visit/">Visit</a></li>
+                            <li id="menu-item-6277"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6277"><a
+                                    href="https://vinuni.edu.vn/directory/">Directory</a></li>
+                            <li id="menu-item-833"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-833"><a
+                                    href="https://vinuni.edu.vn/contact/">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="headertopbar-right">
+                        <form class="form-search" method="GET" action="https://vinuni.edu.vn/">
+                            <input class="search-field" type="search" value="" name="s">
+                            <button type="submit"> <span class="search-button"><img src="./assets/img/search.png"
+                                        alt="icon search"></span></button>
+                            <input type="hidden" name="mTntcoIpMJa" value="SbIqiY2zds["><input type="hidden"
+                                name="IOXAsNTSEvzk" value="8xH@_O4Qwo7R"></form>
+                    </div>
+                </div>
+            </div>
+            <header class="header sticky-header affix-top">
+                <div class="header-destop">
+                    <div class="container">
+                        <div class="header-destop-logo"> <a class="logo" href="https://vinuni.edu.vn/"><img
+                                    src="./assets/img/logo.svg" alt="Logo VinUni" width="226" height="43"></a>
+                        </div>
+                        <nav class="nav-main">
+                            <ul id="menu-primary-menu" class="menu">
+                                <li id="menu-item-246"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-246">
+                                    <a href="https://vinuni.edu.vn/about-vinuniversity/">About VinUniversity</a>
+                                    <ul class="sub-menu">
+                                        <li id="menu-item-6726"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6726">
+                                            <a
+                                                href="https://vinuni.edu.vn/about-vinuniversity/about-the-founding-donor-vingroup-jsc/">About
+                                                The Founding Donor – Vingroup JSC</a></li>
+                                        <li id="menu-item-530"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-530">
+                                            <a href="https://vinuni.edu.vn/about-vinuniversity/">About VinUniversity</a>
+                                        </li>
+                                        <li id="menu-item-819"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-819">
+                                            <a
+                                                href="https://vinuni.edu.vn/about-vinuniversity/governance/">Governance</a>
+                                        </li>
+                                        <li id="menu-item-787"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-787">
+                                            <a
+                                                href="https://vinuni.edu.vn/about-vinuniversity/strategic-collaborators-and-partners/">Strategic
+                                                Collaborators and Partners</a></li>
+                                        <li id="menu-item-811"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-811">
+                                            <a href="https://vinuni.edu.vn/about-vinuniversity/news-events/">News &amp;
+                                                Events</a></li>
+                                    </ul>
+                                </li>
+                                <li id="menu-item-247"
+                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-247">
+                                    <a href="https://vinuni.edu.vn/#">Academics</a>
+                                    <ul class="sub-menu">
+                                        <li id="menu-item-274"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-274">
+                                            <a href="https://vinuni.edu.vn/college-of-business-management/">College of
+                                                Business &amp;
+                                                Management</a></li>
+                                        <li id="menu-item-276"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-276">
+                                            <a href="https://vinuni.edu.vn/college-of-engineering-computer-science/">College
+                                                of Engineering
+                                                &amp; Computer Science</a></li>
+                                        <li id="menu-item-277"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-277">
+                                            <a href="https://vinuni.edu.vn/college-of-health-sciences/">College of
+                                                Health Sciences</a></li>
+                                        <li id="menu-item-5690"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5690">
+                                            <a href="https://vinuni.edu.vn/faculty-of-arts-and-sciences/">Faculty of
+                                                Arts and Sciences</a></li>
+                                        <li id="menu-item-629"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-629">
+                                            <a href="https://vinuni.edu.vn/academic-calendar/">Academic Calendar</a>
+                                        </li>
+                                        <li id="menu-item-6724"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6724">
+                                            <a href="https://vinuni.edu.vn/center-for-institutional-excellence/">Center
+                                                for Institutional
+                                                Excellence</a></li>
+                                        <li id="menu-item-7214"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7214">
+                                            <a href="https://vinuni.edu.vn/library/">Library</a></li>
+                                    </ul>
+                                </li>
+                                <li id="menu-item-920"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-920"><a
+                                        href="https://vinuni.edu.vn/vinuni-research/">Research</a></li>
+                                <li id="menu-item-251"
+                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-251">
+                                    <a href="https://vinuni.edu.vn/#">Admissions &amp; Aid</a>
+                                    <ul class="sub-menu">
+                                        <li id="menu-item-7745"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7745">
+                                            <a href="https://vinuni.edu.vn/students/">Undergraduate</a></li>
+                                        <li id="menu-item-785"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-785">
+                                            <a href="https://vinuni.edu.vn/post-graduate/">Postgraduate</a></li>
+                                        <li id="menu-item-799"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-799">
+                                            <a href="https://scholarships.vinuni.edu.vn/">Overseas Master/PhD
+                                                Scholarships</a></li>
+                                    </ul>
+                                </li>
+                                <li id="menu-item-252"
+                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-252">
+                                    <a href="https://vinuni.edu.vn/#">Student Life</a>
+                                    <ul class="sub-menu">
+                                        <li id="menu-item-549"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-549">
+                                            <a href="https://vinuni.edu.vn/our-campus/">Our Campus</a></li>
+                                        <li id="menu-item-6964"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6964">
+                                            <a href="https://vinuni.edu.vn/life-at-vinuni/">Life at VinUni</a></li>
+                                        <li id="menu-item-7191"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7191">
+                                            <a href="https://vinuni.edu.vn/first-year-experience/">First Year
+                                                Experience</a></li>
+                                        <li id="menu-item-7213"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7213">
+                                            <a href="https://vinuni.edu.vn/library/">Library</a></li>
+                                    </ul>
+                                </li>
+                                <li id="menu-item-630"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-630"><a
+                                        href="https://vinuni.edu.vn/job-opportunities/">Working@VinUni</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="header-mobile">
+                    <div class="header-mobile-top">
+                        <div class="header-mobile-logo animated fadeInLeft"><a class="logo"
+                                href="https://vinuni.edu.vn/"><img src="./assets/img/logo.svg" alt="Logo VinUni"></a>
+                        </div>
+                        <div class="header-mobile-right">
+                            <div class="header-mobile__social-link ml-2">
+                                <ul>
+                                    <li><a href="https://www.facebook.com/vinuniversity/" target="_blank"
+                                            rel="nofollow"><span class="icon icon-facebook"></span></a></li>
+                                    <li><a href="https://www.youtube.com/channel/UCVOxVrSgR3RmvU2Kzi4xC9A"
+                                            target="_blank" rel="nofollow"><span class="icon icon-youtube"></span></a>
+                                    </li>
+                                    <li><a href="mailto:students@vinuni.edu.vn" target="_blank" rel="nofollow"> <span
+                                                class="icon icon-mail"></span></a></li>
+                                </ul>
+                            </div>
+
+                            <div class="menu-mobile-effect navbar-toggle animated fadeInRight">
+                                <div class="icon-wrap"> <img src="./assets/img/icon-menu.png" alt="icon menu">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-mobile-content">
+                        <div class="header-mobile-content-wrapper">
+                            <ul id="menu-mobile-menu-en" class="nav-main">
+                                <li id="menu-item-884"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-884">
+                                    <a href="https://vinuni.edu.vn/about-vinuniversity/">About VinUniversity</a><span
+                                        class="icon-toggle"><span class="icon-down"></span></span>
+                                    <ul class="sub-menu">
+                                        <li id="menu-item-6727"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6727">
+                                            <a
+                                                href="https://vinuni.edu.vn/about-vinuniversity/about-the-founding-donor-vingroup-jsc/">About
+                                                The Founding Donor – Vingroup JSC</a></li>
+                                        <li id="menu-item-885"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-885">
+                                            <a href="https://vinuni.edu.vn/about-vinuniversity/">About VinUniversity</a>
+                                        </li>
+                                        <li id="menu-item-886"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-886">
+                                            <a
+                                                href="https://vinuni.edu.vn/about-vinuniversity/governance/">Governance</a>
+                                        </li>
+                                        <li id="menu-item-888"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-888">
+                                            <a
+                                                href="https://vinuni.edu.vn/about-vinuniversity/strategic-collaborators-and-partners/">Strategic
+                                                Collaborators and Partners</a></li>
+                                        <li id="menu-item-6298"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6298">
+                                            <a href="https://vinuni.edu.vn/about-vinuniversity/news-events/">News &amp;
+                                                Events</a></li>
+                                    </ul>
+                                </li>
+                                <li id="menu-item-890"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-890"><a
+                                        href="https://vinuni.edu.vn/vinuni-research/">Research</a></li>
+                                <li id="menu-item-891"
+                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-891">
+                                    <a href="https://vinuni.edu.vn/#">Academics</a><span class="icon-toggle"><span
+                                            class="icon-down"></span></span>
+                                    <ul class="sub-menu">
+                                        <li id="menu-item-893"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-893">
+                                            <a href="https://vinuni.edu.vn/college-of-business-management/">College of
+                                                Business &amp;
+                                                Management</a></li>
+                                        <li id="menu-item-894"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-894">
+                                            <a href="https://vinuni.edu.vn/college-of-engineering-computer-science/">College
+                                                of Engineering
+                                                &amp; Computer Science</a></li>
+                                        <li id="menu-item-895"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-895">
+                                            <a href="https://vinuni.edu.vn/college-of-health-sciences/">College of
+                                                Health Sciences</a></li>
+                                        <li id="menu-item-896"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-896">
+                                            <a href="https://vinuni.edu.vn/faculty-of-arts-and-sciences/">Faculty of
+                                                Arts and Sciences</a></li>
+                                        <li id="menu-item-892"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-892">
+                                            <a href="https://vinuni.edu.vn/academic-calendar/">Academic Calendar</a>
+                                        </li>
+                                        <li id="menu-item-6723"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6723">
+                                            <a href="https://vinuni.edu.vn/center-for-institutional-excellence/">Center
+                                                for Institutional
+                                                Excellence</a></li>
+                                        <li id="menu-item-7210"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7210">
+                                            <a href="https://vinuni.edu.vn/library/">Library</a></li>
+                                    </ul>
+                                </li>
+                                <li id="menu-item-899"
+                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-899">
+                                    <a href="https://vinuni.edu.vn/#">Admissions &amp; Aid</a><span
+                                        class="icon-toggle"><span class="icon-down"></span></span>
+                                    <ul class="sub-menu">
+                                        <li id="menu-item-7752"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7752">
+                                            <a href="https://vinuni.edu.vn/students/">Undergraduate</a></li>
+                                        <li id="menu-item-900"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-900">
+                                            <a href="https://vinuni.edu.vn/post-graduate/">Postgraduate</a></li>
+                                        <li id="menu-item-902"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-902">
+                                            <a href="https://scholarships.vinuni.edu.vn/">Overseas Master/PhD
+                                                Scholarships</a></li>
+                                    </ul>
+                                </li>
+                                <li id="menu-item-903"
+                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-903">
+                                    <a href="https://vinuni.edu.vn/#">Student Life</a><span class="icon-toggle"><span
+                                            class="icon-down"></span></span>
+                                    <ul class="sub-menu">
+                                        <li id="menu-item-905"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-905">
+                                            <a href="https://vinuni.edu.vn/our-campus/">Our Campus</a></li>
+                                        <li id="menu-item-6986"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6986">
+                                            <a href="https://vinuni.edu.vn/life-at-vinuni/">Life at VinUni</a></li>
+                                        <li id="menu-item-7192"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7192">
+                                            <a href="https://vinuni.edu.vn/first-year-experience/">First Year
+                                                Experience</a></li>
+                                        <li id="menu-item-7209"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7209">
+                                            <a href="https://vinuni.edu.vn/library/">Library</a></li>
+                                    </ul>
+                                </li>
+                                <li id="menu-item-909"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-909"><a
+                                        href="https://vinuni.edu.vn/job-opportunities/">Working@VinUni</a></li>
+                                <li id="menu-item-912"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-912"><a
+                                        href="https://vinuni.edu.vn/visit/">VISIT</a></li>
+                                <li id="menu-item-6299"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6299">
+                                    <a href="https://vinuni.edu.vn/directory/">DIRECTORY</a></li>
+                                <li id="menu-item-913"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-913"><a
+                                        href="https://vinuni.edu.vn/contact/">CONTACT</a></li>
+                            </ul>
+                            <div class="header-mobile-search">
+                                <form class="header-mobile-search-form" method="GET" action="https://vinuni.edu.vn/">
+                                    <input class="search-field" id="s-mobile" type="search" value="" name="s"
+                                        placeholder="Search">
+                                    <button type="submit">
+                                        <i class="icon-search"></i>
+                                    </button>
+                                    <input type="hidden" name="mTntcoIpMJa" value="SbIqiY2zds["><input type="hidden"
+                                        name="IOXAsNTSEvzk" value="8xH@_O4Qwo7R"></form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <!-- Main -->
+        <div class="animsition animsition-wrapper" data-animsition-in-class="fade-in"
+            data-animsition-out-class="fade-out">
+            <!-- section Site-header -->
+            <section class="site-header-main">
+                <div id="site-colors" class="uw-site--colors">
+                    <div class="uw-section--inner">
+                        <div class="uw-site--cbar">
+                            <div class="uw-site--c1 uw-cbar"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="site-header" class="uw-site--header">
+                    <div class="uw-section--inner">
+                        <a href="/" title="Library Portal" rel="home"> Library Portal </a>
+                    </div>
+                </div>
+            </section>
+            <!-- section Main Menu -->
+            <section class="main-menu">
+                <div id="global-nav" class="horizontal megamenu" role="navigation">
+                    <ul class="sf-menu sf-js-enabled sf-arrows" id="dropdown-menu" role="group">
+                        <li class="current" id="firsta">
+                            <a href="/">Home</a>
+                        </li>
+                        <li class="">
+                            <a href="#" class="sf-with-ul">About Us</a>
+                            <div class="sf-mega">
+                                <div class="sf-mega-section">
+                                    <!-- <h2><a href="#">Find Resources by Type</a></h2> -->
+                                    <ul>
+                                        <li class="current"><a href="#">Library vision, mission, goals</a></li>
+                                        <li class="current"><a href="#">Hours and access</a></li>
+                                        <li class="current"><a href="#">Floor plans and virtual tour </a></li>
+                                        <li class="current"><a href="#">Library policies </a></li>
+                                        <li class="current"><a href="#">Library employment</a></li>
+                                        <li class="current"><a href="#">Donation to Library</a></li>
+                                        <li class="current"><a href="#">Library Strategic Plan</a></li>
+                                        <li class="current"><a href="#">Contact us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="">
+                            <a href="#" class="sf-with-ul">Services</a>
+                            <div class="sf-mega">
+                                <div class="sf-mega-section">
+                                    <ul>
+                                        <li class="current"><a href="#">Borrow and request</a></li>
+                                        <li class="current"><a href="#">Learning services</a></li>
+                                        <li class="current"><a href="#">Research services</a></li>
+                                        <li class="current"><a href="#">How to use</a></li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" class="sf-with-ul">Resources</a>
+                            <div class="sf-mega">
+                                <div class="sf-mega-section">                                    
+                                    <ul>
+                                        <li class="current"><a href="#">New arrivals </a></li>
+                                        <li class="current"><a href="#">Databases </a></li>
+                                        <li class="current"><a href="#">Ejournals </a></li>
+                                        <li class="current"><a href="#">Space</a></li>
+                                        <li class="current"><a href="#">Open Knowledge Scholarship</a></li>
+                                        <li class="current"><a href="#">Resources Guides</a></li>
+                                        <li class="current"><a href="#">University research outputs</a></li>
+                                        <li class="current"><a href="#">Suggest a Resource</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" class="sf-with-ul">Help</a>
+                            <div class="sf-mega">
+                                <div class="sf-mega-section">
+                                    <ul>
+                                        <li class="current"><a href="">Ask a librarian</a></li>
+                                        <li class="current"><a href="">FAQ</a></li>
+                                        <li class="current"><a href="">Forms</a></li>
+                                        <li class="current"><a href="">Help for students</a></li>
+                                        <li class="current"><a href="">Help for faculty and researchers</a></li>
+                                        <li class="current"><a href="">Help for staff</a></li>
+                                        <li class="current"><a href="">Help for international students</a></li>
+                                        <li class="current"><a href="">Help for users from community</a></li>
+                                        <li class="current"><a href="">Help for visitors</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hitter" id="main-menu-mobile">
+                    <a><i class="fa fa-bars" aria-hidden="true"></i> Menu</a>
+                </div>
+            </section>
+            <!-- main body -->
+            <section>
+                <div class="content">
+                    <div class="uw-lib-front-layout at-panel panel-display clearfix">
+                        <div class="wrapper-content">
+                            <header class="main-head">
+                                <div class="panel-pane pane-block pane-uw-lib-homepage-uw-lib-special-alert">
+                                    <h2 class="pane-title alert">Special Alert</h2>
+                                    <div class="pane-content">
+                                        <h3 class="announce">Announcements</h3>
+                                        <div class="clearfix">
+                                            <p><strong>We're still here for you</strong></p>
+
+                                            <p>
+                                                
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </header>
+                            <!-- Search -->
+                            <article class="content_top">
+                                <div class="panel-pane pane-block pane-quicktabs-search">
+                                    <h2 class="pane-title">
+                                        Search
+                                    </h2>
+                                    <hr class="mb-4">
+                                    <div class="pane-content">
+                                        <div class="utk-panel--search">
+                                            <div class="utk-search">
+                                                <div class="utk-search-tabs">
+                                                    <div class="ui text menu">
+                                                        <a class="active item">Catalogue</a>
+                                                        <a class="item">Portal</a>
+                                                        <a class="item">UT Collections</a>
+                                                        <a class="item">Course Reserve</a>
+                                                    </div>
+                                                    <div class="ui segment active tab">
+                                                        <form method="post" action="#" class="ui form utk-search--form">
+                                                            <span class="utk-search--icon"><span
+                                                                    class="icon-search"></span></span>
+                                                            <div class="ui action input">
+                                                                <input name="value"
+                                                                    placeholder="Search for books, articles, and more..."
+                                                                    aria-label="Search for books, articles, and more..."
+                                                                    type="text">
+                                                                <div class="input-group-append">
+                                                                    <button class="btn btn-primary"> Search </button>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <div class="ui text search-advanced right menu">
+                                                        <a href="">Advanced Search</a>
+                                                    </div>
+                                                    <div class="ui text menu">
+                                                        <a class="item">Learn about Discovery</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <!-- Locations and Hours -->
+                            <article class="content_middle">
+                                <div class="panel-pane pane-custom pane-1">
+                                    <h2 class="pane-title">
+                                        Locations and Hours
+                                    </h2>
+                                    <hr class="mb-3">
+                                    <div class="pane-content">
+                                        <div class="utk-resources-menu--about">
+                                            <div class="utk-resources-menu--media">
+                                                <div class="utk-resources-menu--media--image"><img
+                                                        src="assets/img/library-vinuni.png"
+                                                        alt="Students studying at Hodges Library."></div>
+
+                                                <div class="utk-resources-menu--media--background"><img
+                                                        src="assets/img/library-vinuni.png"
+                                                        alt="Students studying at Hodges Library."></div>
+                                            </div>
+                                            <div class="utk-resources-menu--section">
+                                                <h3 class="utk-resources-menu--trigger">
+                                                    <span class="fa-stack fa-lg">
+                                                        <i class="fa fa-clock-o fa-2x" aria-hidden="true"></i></span>
+                                                    8am – 9pm (Mon-Fri), 9am –5pm (Sat-Sun) for MAIN.
+                                                    <br>
+                                                    8 am-5 pm (Mon-Fri), 9am – 5 pm (Sat-Sun) for 2nd FLOOR. </h3>
+                                                <h3 class="utk-resources-menu--trigger">
+                                                    <span class="fa-stack fa-lg"><i class="fa fa-phone fa-2x"
+                                                            aria-hidden="true"></i></span>
+                                                    84-2471089779</h3>
+                                                <h3 class="utk-resources-menu--trigger">
+                                                    <span class="fa-stack fa-lg"><i class="fa fa-paperclip fa-2x"
+                                                            aria-hidden="true"></i></span>
+                                                    Vinhomes Ocean Park, Gia Lam District, Hanoi.</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <!--  -->
+                            <aside class="side">
+                                <div class="panel-pane pane-node static_links">
+                                    <h2 class="pane-title">
+                                        Quick Links
+                                    </h2>
+                                    <hr class="mb-3">
+                                    <div class="pane-content">
+                                        <div id="node-14" class="node node-page node-even" about="">
+                                            <div class="node-inner">
+                                                <div class="content_node">
+                                                    <div class="quick_links">
+                                                        <h3 class="font-weight-bold"><a class="text-secondary"
+                                                                href="#">Google Scholar</a></h3>
+                                                        <h3 class="font-weight-bold"><a class="text-secondary"
+                                                                href="#">Ask A Librarian</a></h3>
+                                                        <h3 class="font-weight-bold"><a class="text-secondary"
+                                                                href="#">Library Account</a></h3>
+                                                        <h3 class="font-weight-bold"><a class="text-secondary"
+                                                                href="#">Remote Access</a></h3>
+                                                        <h3 class="font-weight-bold"><a class="text-secondary"
+                                                                href="#">Research Guides</a></h3>
+                                                        <h3 class="font-weight-bold"><a class="text-secondary"
+                                                                href="#">Open Scholarship</a></h3>
+                                                        <h3 class="font-weight-bold"><a class="text-secondary"
+                                                                href="#">Citation Guides</a></h3>
+                                                        <h3 class="font-weight-bold"><a class="text-secondary"
+                                                                href="#">Room Booking</a></h3>
+                                                    </div>
+                                                </div>
+                                                <div class="links"></div>
+                                            </div>
+                                            <!-- /node-inner -->
+                                        </div>
+                                        <!-- /node-->
+                                    </div>
+                                </div>
+                                <div class="panel-separator"></div>
+                                <div class="panel-pane pane-custom pane-2">
+                                    <div class="divider_right"></div>
+                                </div>
+                                <div class="panel-separator"></div>
+
+                                <div class="panel-pane pane-block pane-uw-lib-homepage-uw-lib-events events_panel">
+
+                                    <i class="fa fa-envelope-o fa-4x" aria-hidden="true"></i>
+                                    <div class="contact-us side">
+                                        <hr class="mb-2">
+                                        <h2 class="pane-title">Contact US</h2>
+                                    </div>
+
+                                </div>
+                            </aside>
+                            <!-- Information for -->
+                            <article class="content_left">
+                                <div class="panel-pane pane-node static_links">
+                                    <h2 class="pane-title">
+                                        INFORMATION FOR
+                                    </h2>
+                                    <hr class="mb-3">
+                                    <div class="pane-content">
+                                        <div id="node-13" class="node node-page node-odd" about="/web/node/13"
+                                            typeof="foaf:Document">
+                                            <div class="node-inner">
+                                                <h2><a href="#"></a></h2>
+                                                <div class="content_node">
+                                                    <div
+                                                        class="field field-name-body field-type-text-with-summary field-label-hidden">
+                                                        <div class="field-items">
+                                                            <div class="field-item even" property="content:encoded">
+                                                                <div class="start_links">
+                                                                    <h3 class="font-weight-bold"><a
+                                                                            class="text-secondary" href="#">Google
+                                                                            Scholar</a></h3>
+                                                                    <h3 class="font-weight-bold"><a
+                                                                            class="text-secondary" href="#">
+                                                                            Undergraduate Students</a></h3>
+                                                                    <h3 class="font-weight-bold"><a
+                                                                            class="text-secondary" href="#"> Graduate
+                                                                            Students and Faculty</a></h3>
+                                                                    <h3 class="font-weight-bold"><a
+                                                                            class="text-secondary" href="#"> Staff</a>
+                                                                    </h3>
+                                                                    <h3 class="font-weight-bold"><a
+                                                                            class="text-secondary" href="#"> Guests</a>
+                                                                    </h3>
+                                                                    <h3 class="font-weight-bold"><a
+                                                                            class="text-secondary" href="#"> Alumni and
+                                                                            Community</a></h3>
+                                                                    <h3 class="font-weight-bold"><a
+                                                                            class="text-secondary" href="#"> Member</a>
+                                                                    </h3>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="links"></div>
+                                            </div>
+                                            <!-- /node-inner -->
+                                        </div>
+                                        <!-- /node-->
+                                    </div>
+                                </div>
+                            </article>
+                            <!-- News -->
+                            <article class="content_center">
+                                <div class="panel-pane pane-block pane-uw-lib-homepage-uw-lib-news">
+                                    <h2 class="pane-title">
+                                        News
+                                    </h2>
+                                    <hr class="mb-3">
+                                    <div class="pane-content">
+                                        <div id="hour-card" class="content-card hour-card">
+                                            <a href="https://vinuni.edu.vn/a-call-by-ministry-of-education-and-training-followed-by-vinuni-cornell-signing-ceremony/"
+                                                class="list-group-item">
+                                                <h3 class="list-group-item-heading">A Call by Ministry of Education...
+                                                </h3>
+                                                On July 21, 2020, the Conference on Promoting Opportunities for Studying
+                                                International[…]
+                                            </a>
+                                            <a href="https://vinuni.edu.vn/publication-on-the-importance-of-stakeholders-engagement-in-the-heathcare-industry-co-authored-by-founding-provost-of-vinuniversity/"
+                                                class="list-group-item">
+                                                <h3 class="list-group-item-heading">Publication on the Importance of
+                                                    Stakeholders’ Engagement...</h3>
+                                                In the contemporary business environment, companies are realizing the
+                                                importance of collaboration with their stakeholders during the design,
+                                                […]
+                                            </a>
+                                            <a href="https://vinuni.edu.vn/international-publication-of-3d-printing-technology-by-faculty-of-college-of-engineering-and-computer-science-vinuniversity/"
+                                                class="list-group-item">
+                                                <h3 class="list-group-item-heading">International Publication of 3D
+                                                    Printing Technology...</h3>
+                                                You might already know 3D printing technology hearing about its
+                                                production of bridges, homes, or parts of airplane […]
+                                            </a>
+                                            <a href="#news" class="list-group-item">
+                                                <p class="list-group-item-text text-secondary"><i
+                                                        class="fa fa-chevron-right"></i>
+                                                    <strong>View all news</strong></p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <!-- Events -->
+                            <article class="content_right">
+                                <div class="panel-pane pane-block pane-uw-lib-homepage-uw-lib-news">
+                                    <h2 class="pane-title"> Events </h2>
+                                    <hr class="mb-3">
+                                    <div class="pane-content">
+                                        <div id="hour-card" class="content-card hour-card">
+                                            <ul class="utk-calendar-listing">
+                                                <span class="utk-calendar-listing--note"
+                                                    style="font-size: 13px; display: block; line-height: 1.47em; margin: 18px 0 0;"><strong>Important:</strong>
+                                                    All events will be held virtually. Event details will be updated.</span>
+                                                <li class="utk-calendar-event" id="utk-calendar-event-33996662136718"> <a
+                                                        href="#" rel="noopener" target="_blank"
+                                                        title="Seed Starting &amp; Plant Care Webinar"
+                                                        aria-label="Seed Starting &amp; Plant Care Webinar on Jul. 14 at 2:30pm in ">
+                                                        <figure class="utk-calendar-event--date-svg"> <span
+                                                                class="utk-calendar-event--date-svg--month">
+                                                                <svg data-name="July" xmlns="http://www.w3.org/2000/svg"
+                                                                    viewBox="0 0 100 30.9">
+                                                                    <title>July</title>
+                                                                    <style>
+                                                                        * {
+                                                                            fill: #fff
+                                                                        }
+                                                                    </style>
+                                                                    <path
+                                                                        d="M9.194,25.5l3.337-3.461c1.69,2.184,3.379,3.42,5.809,3.42,2.72,0,4.574-1.813,4.574-5.686V.9h5.232V19.933c0,3.42-1.03,5.974-2.719,7.663a9.631,9.631,0,0,1-7,2.554A10.862,10.862,0,0,1,9.194,25.5Z">
+                                                                    </path>
+                                                                    <path
+                                                                        d="M36.592,17.5V.9H41.66V17.3c0,5.356,2.76,8.2,7.292,8.2,4.49,0,7.251-2.678,7.251-7.993V.9H61.27V17.255c0,8.611-4.861,12.936-12.4,12.936C41.371,30.191,36.592,25.866,36.592,17.5Z">
+                                                                    </path>
+                                                                    <path d="M70.025.9h5.068V25.124H90.254v4.614H70.025Z">
+                                                                    </path>
+                                                                </svg>
+                                                            </span> <span class="utk-calendar-event--date-svg--day">
+                                                                <svg data-name="14" xmlns="http://www.w3.org/2000/svg"
+                                                                    viewBox="0 0 100 50">
+                                                                    <title>14</title>
+                                                                    <style>
+                                                                        * {
+                                                                            fill: #fff
+                                                                        }
+                                                                    </style>
+                                                                    <path
+                                                                        d="M23.3,14.892l-7.6,1.668-2.8-11.539,13.94-3.8H38.637V48.24H23.3Z">
+                                                                    </path>
+                                                                    <path
+                                                                        d="M65.664,40.17H43.187L40.653,29.232,63.463,1.219H80.8V29.165h5.6V40.17H80.8v8.07H65.664Zm0-10.805V16.96l-9.938,12.4Z">
+                                                                    </path>
+                                                                </svg> </span></figure>
+                                                        <div class="utk-calendar-event--body">
+                                                            <h4 class="utk-calendar-event--title">THE QUIS17 SYMPOSIUM</h4>
+                                                            <div class="utk-calendar-event--time">
+                                                                <i class="fa fa-clock-o" aria-hidden="true"></i> <span
+                                                                    class="utk-calendar-event--time--start"> Jul. 14 @
+                                                                    2:30pm
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="utk-calendar-event" id="utk-calendar-event-34005208996844"> <a
+                                                        href="#" rel="noopener" target="_blank"
+                                                        title="Food Justice: Understanding Modern Food Inequalities"
+                                                        aria-label="Food Justice: Understanding Modern Food Inequalities on Jul. 15 at 3:30pm in ">
+                                                        <figure class="utk-calendar-event--date-svg"> <span
+                                                                class="utk-calendar-event--date-svg--month"> <svg
+                                                                    data-name="July" xmlns="http://www.w3.org/2000/svg"
+                                                                    viewBox="0 0 100 30.9">
+                                                                    <title>July</title>
+                                                                    <style>
+                                                                        * {
+                                                                            fill: #fff
+                                                                        }
+                                                                    </style>
+                                                                    <path
+                                                                        d="M9.194,25.5l3.337-3.461c1.69,2.184,3.379,3.42,5.809,3.42,2.72,0,4.574-1.813,4.574-5.686V.9h5.232V19.933c0,3.42-1.03,5.974-2.719,7.663a9.631,9.631,0,0,1-7,2.554A10.862,10.862,0,0,1,9.194,25.5Z">
+                                                                    </path>
+                                                                    <path
+                                                                        d="M36.592,17.5V.9H41.66V17.3c0,5.356,2.76,8.2,7.292,8.2,4.49,0,7.251-2.678,7.251-7.993V.9H61.27V17.255c0,8.611-4.861,12.936-12.4,12.936C41.371,30.191,36.592,25.866,36.592,17.5Z">
+                                                                    </path>
+                                                                    <path d="M70.025.9h5.068V25.124H90.254v4.614H70.025Z">
+                                                                    </path>
+                                                                </svg>
+                                                             </span> 
+                                                                <span class="utk-calendar-event--date-svg--day">
+                                                                <svg data-name="15" xmlns="http://www.w3.org/2000/svg"
+                                                                    viewBox="0 0 99 50">
+                                                                    <title>15</title>
+                                                                    <style>
+                                                                        * {
+                                                                            fill: #fff
+                                                                        }
+                                                                    </style>
+                                                                    <path
+                                                                        d="M24.871,14.892l-7.6,1.668-2.8-11.539,13.94-3.8H40.211V48.24H24.871Z">
+                                                                    </path>
+                                                                    <path
+                                                                        d="M43.014,41.571l8.6-10c4,3.2,7.736,5.069,11.538,5.069,3.735,0,5.869-1.934,5.869-4.468v-.134c0-2.735-2.2-4.469-5.468-4.469-2.869,0-4.936,1.2-7.137,2.935l-9.4-4.669L48.35,1.553H82.031V13.892H59.955l-.334,6.069a16.007,16.007,0,0,1,8.871-2.534c7.737,0,15.607,4.935,15.607,14.74V32.3c0,10.8-8.871,16.941-20.743,16.941C54.286,49.241,48.216,46.239,43.014,41.571Z">
+                                                                    </path>
+                                                                </svg> </span></figure>
+                                                        <div class="utk-calendar-event--body">
+                                                            <h4 class="utk-calendar-event--title">VINUNIVERSITY CAMPUS OPENING
+                                                                CEREMONY</h4>
+                                                            <div class="utk-calendar-event--time">
+                                                                <i class="fa fa-clock-o" aria-hidden="true"></i> <span
+                                                                    class="utk-calendar-event--time--start"> Jul. 15 @
+                                                                    3:30pm
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="utk-calendar-event" id="utk-calendar-event-34005208996844"> <a
+                                                    href="#" rel="noopener" target="_blank"
+                                                    title="Food Justice: Understanding Modern Food Inequalities"
+                                                    aria-label="Food Justice: Understanding Modern Food Inequalities on Jul. 15 at 3:30pm in ">
+                                                    <figure class="utk-calendar-event--date-svg"> <span
+                                                            class="utk-calendar-event--date-svg--month"> <svg
+                                                                data-name="July" xmlns="http://www.w3.org/2000/svg"
+                                                                viewBox="0 0 100 30.9">
+                                                                <title>July</title>
+                                                                <style>
+                                                                    * {
+                                                                        fill: #fff
+                                                                    }
+                                                                </style>
+                                                                <path
+                                                                    d="M9.194,25.5l3.337-3.461c1.69,2.184,3.379,3.42,5.809,3.42,2.72,0,4.574-1.813,4.574-5.686V.9h5.232V19.933c0,3.42-1.03,5.974-2.719,7.663a9.631,9.631,0,0,1-7,2.554A10.862,10.862,0,0,1,9.194,25.5Z">
+                                                                </path>
+                                                                <path
+                                                                    d="M36.592,17.5V.9H41.66V17.3c0,5.356,2.76,8.2,7.292,8.2,4.49,0,7.251-2.678,7.251-7.993V.9H61.27V17.255c0,8.611-4.861,12.936-12.4,12.936C41.371,30.191,36.592,25.866,36.592,17.5Z">
+                                                                </path>
+                                                                <path d="M70.025.9h5.068V25.124H90.254v4.614H70.025Z">
+                                                                </path>
+                                                            </svg>
+                                                         </span> 
+                                                            <span class="utk-calendar-event--date-svg--day">
+                                                            <svg data-name="15" xmlns="http://www.w3.org/2000/svg"
+                                                                viewBox="0 0 99 50">
+                                                                <title>15</title>
+                                                                <style>
+                                                                    * {
+                                                                        fill: #fff
+                                                                    }
+                                                                </style>
+                                                                <path
+                                                                    d="M24.871,14.892l-7.6,1.668-2.8-11.539,13.94-3.8H40.211V48.24H24.871Z">
+                                                                </path>
+                                                                <path
+                                                                    d="M43.014,41.571l8.6-10c4,3.2,7.736,5.069,11.538,5.069,3.735,0,5.869-1.934,5.869-4.468v-.134c0-2.735-2.2-4.469-5.468-4.469-2.869,0-4.936,1.2-7.137,2.935l-9.4-4.669L48.35,1.553H82.031V13.892H59.955l-.334,6.069a16.007,16.007,0,0,1,8.871-2.534c7.737,0,15.607,4.935,15.607,14.74V32.3c0,10.8-8.871,16.941-20.743,16.941C54.286,49.241,48.216,46.239,43.014,41.571Z">
+                                                                </path>
+                                                            </svg> </span></figure>
+                                                    <div class="utk-calendar-event--body">
+                                                        <h4 class="utk-calendar-event--title">RESEARCH AND TEACHING EXCELLENCE
+                                                            WORKSHOP 2019</h4>
+                                                        <div class="utk-calendar-event--time">
+                                                            <i class="fa fa-clock-o" aria-hidden="true"></i> <span
+                                                                class="utk-calendar-event--time--start"> Jul. 15 @
+                                                                3:30pm
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            </ul>
+                                            
+                                            <a href="#envet" class="list-group-item">
+                                                <p class="list-group-item-text text-secondary"><i
+                                                        class="fa fa-chevron-right"></i>
+                                                    <strong>View all news</strong></p>
+                                            </a>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- icon -->
+            <section>
+                <div class="container">
+                    <div class="icon-content share" id="share-social">
+                        <ul class="social-link library">
+                            <li class="icon-content-library">
+                                <a type="button" title="Share on facebook" data-sharer="facebook"
+                                    data-title="VinUniversity" data-hashtags="library"
+                                    data-url="https://vinuni.edu.vn"><span class="icon icon-facebook"></span></a>
+                            </li>
+                            <li class="icon-content-library">
+                                <a type="button" title="Share on Twitter" data-sharer="twitter"
+                                    data-title="VinUniversity" data-hashtags="library"
+                                    data-url="https://vinuni.edu.vn"><span class="fa fa-twitter"></span></a>
+                            </li>
+                            <li class="icon-content-library">
+                                <a type="button" title="Share on linkedin" data-sharer="linkedin"
+                                    data-url="https://vinuni.edu.vn"><span class="icon icon-linkedin"></span></a>
+                            </li>
+                            <li class="icon-content-library">
+                                <a class="button" data-sharer="email" data-title="mail" data-url="https://vinuni.edu.vn"
+                                    data-subject="Hey! Check out that URL" data-to="some@email.com"><span
+                                        class="icon icon-mail"></span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="icon-content">
+                        <ul class="social-link library">
+                            <li class="icon-content-library">
+                                <a href="#home" title="srcoll top" rel="nofollow">
+                                    <span class="icon icon-arrow-up-2"></span>
+                                </a>
+                            </li>
+                            <li class="icon-content-library" id="share">
+                                <a title="share" rel="nofollow">
+                                    <span class="fa fa-share-alt"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- footer content -->
+            <section id="footer-content" class="footer">
+                <div class="footer-content footer-top">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 col-lg-2 footer-col1">
+                                <div class="widget_nav_menu">
+                                    <span class="widget-title title-portal"><a href="/">LIBRARY PORTAL</a></span>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-lg-4 footer-col2">
+                                <div class="widget_nav_menu">
+                                    <ul id="menu-footer-1-menu" class="menu">
+                                        <li id="menu-item-306"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-306">
+                                            <a href="#">Library account</a>
+                                        </li>
+                                        <li id="menu-item-306"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-306">
+                                            <a href="#">Course reserves</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-lg-4 footer-col2">
+                                <div class="widget_nav_menu">
+                                    <ul id="menu-footer-1-menu" class="menu">
+                                        <li id="menu-item-3062"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-306">
+                                            <a href="#">Room booking</a>
+                                        </li>
+                                        <li id="menu-item-3063"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-306">
+                                            <a href="#">Research guide</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-lg-2 footer-col4">
+                                <div class="widget_nav_menu">
+                                    <ul id="menu-footer-3-menu" class="menu">
+                                        <li id="menu-item-3033"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-306">
+                                            <a href="#">Library employment</a>
+                                        </li>
+                                        <li id="menu-item-3033"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-306">
+                                            <a href="#">Donation to library</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="footer-content footer-copyright">
+                                <div class="container">
+                                    <div class="copyright-content">
+                                        <p>Our Library portal is still under construction, please send us your
+                                            feedback!</p>
+                                        <ul class="social-link library" style="text-align: center;display: block;">
+                                            <li><a href="https://www.facebook.com/vinuniversity/" target="_blank"
+                                                    rel="nofollow"><span class="icon icon-facebook"></span></a></li>
+                                            <li><a href="https://www.youtube.com/channel/UCVOxVrSgR3RmvU2Kzi4xC9A"
+                                                    target="_blank" rel="nofollow"><span
+                                                        class="icon icon-youtube"></span></a>
+                                            </li>
+                                            <li><a href="" target="_blank" rel="nofollow">
+                                                    <span class="fa fa-twitter"></span></a></li>
+
+                                            <li><a href="mailto:students@vinuni.edu.vn" target="_blank" rel="nofollow">
+                                                    <span class="icon icon-mail"></span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-2 footer-col1"><a class="logo-footer mt-4"
+                                href="https://vinuni.edu.vn/"><img src="./assets/img/logo-white.svg" alt="footer logo"
+                                    width="164" height="100"></a></div>
+                        <div class="col-md-12 col-lg-4 footer-col2">
+                            <div class="widget_nav_menu">
+                                <span class="widget-title">Schools, Programs Office</span>
+                                <ul id="menu-footer-1-menu" class="menu">
+                                    <li id="menu-item-306"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-306">
+                                        <a href="https://vinuni.edu.vn/college-of-business-management/">College of
+                                            Business
+                                            &amp;
+                                            Management</a></li>
+                                    <li id="menu-item-304"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-304">
+                                        <a href="https://vinuni.edu.vn/college-of-engineering-computer-science/">College
+                                            of
+                                            Engineering
+                                            &amp; Computer Science</a></li>
+                                    <li id="menu-item-305"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-305">
+                                        <a href="https://vinuni.edu.vn/college-of-health-sciences/">College of
+                                            Health
+                                            Sciences</a></li>
+                                    <li id="menu-item-829"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-829">
+                                        <a href="https://vinuni.edu.vn/faculty-of-arts-and-sciences/">Faculty of
+                                            Arts and
+                                            Sciences</a></li>
+                                    <li id="menu-item-830"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-830">
+                                        <a href="https://vinuni.edu.vn/academic-calendar/">Academic Calendar</a>
+                                    </li>
+                                    <li id="menu-item-6581"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6581">
+                                        <a href="https://vinuni.edu.vn/vinuni-research/">Research</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-4 footer-col3">
+                            <div class="widget_nav_menu">
+                                <span class="widget-title">Admissions &amp; Aid</span>
+                                <ul id="menu-footer-2-menu" class="menu">
+                                    <li id="menu-item-8035"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8035">
+                                        <a href="https://vinuni.edu.vn/students/">Undergraduate</a></li>
+                                    <li id="menu-item-828"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-828">
+                                        <a href="https://vinuni.edu.vn/post-graduate/">Postgraduate</a></li>
+                                    <li id="menu-item-313"
+                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-313">
+                                        <a href="https://scholarships.vinuni.edu.vn/">Overseas Master/PhD
+                                            Scholarships</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-2 footer-col4">
+                            <div class="widget_nav_menu">
+                                <span class="widget-title">FAQ</span>
+                                <ul id="menu-footer-3-menu" class="menu">
+                                    <li id="menu-item-6583"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6583">
+                                        <a href="https://vinuni.edu.vn/visit/">Campus Map</a></li>
+                                    <li id="menu-item-6582"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6582">
+                                        <a href="https://vinuni.edu.vn/contact/">Contact Us</a></li>
+                                    <li id="menu-item-7382"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7382">
+                                        <a href="https://vinuni.edu.vn/library/">Library</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    <div class="copyright-content">
+                        <div class="row">
+                            <div class="col-8 col-md-9">
+                                <p>
+                                    Copyright © 2019 VinUni. All right reserved. Privacy Policy </p>
+                            </div>
+                            <div class="col-4 col-md-3 social-link-wrapper">
+                                <ul class="social-link">
+                                    <li><a href="https://www.facebook.com/vinuniversity/" target="_blank"
+                                            rel="nofollow"><span class="icon icon-facebook"></span></a></li>
+                                    <li><a href="https://www.youtube.com/channel/UCVOxVrSgR3RmvU2Kzi4xC9A"
+                                            target="_blank" rel="nofollow"><span class="icon icon-youtube"></span></a>
+                                    </li>
+                                    <li><a href="mailto:students@vinuni.edu.vn" target="_blank" rel="nofollow">
+                                            <span class="icon icon-mail"></span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script type="text/javascript" src="./assets/js/vinuni/main.js"></script>
+    <script type="text/javascript" src="./assets/js/vinuni/custom.js"></script>
+    <script type="text/javascript" src="./assets/js/vinuni/share.js"></script>
+    <script>(function () { var pp = document.createElement('script'), ppr = document.getElementsByTagName('script')[0]; stid = 'SXY1blo0VWFKdVZDWEdCNHB0bEdBdz09'; pp.type = 'text/javascript'; pp.async = true; pp.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 's01.live2support.com/dashboardv2/chatwindow/'; ppr.parentNode.insertBefore(pp, ppr); })();</script>
+</body>
+
+</html>
